@@ -33,4 +33,6 @@ jobs:
       - name: Run a multi-line script
         run: |
           gh pr merge qa
+        env:
+          GH_TOKEN: ${{ github.token }}
         
